@@ -13,5 +13,6 @@ class ParkingFee(models.Model):
     entry_time = models.DateTimeField()
     exit_time = models.DateTimeField(null=True)
     total_amount = models.DecimalField(max_digits=6, decimal_places=2, null=True)
+    
 
 
