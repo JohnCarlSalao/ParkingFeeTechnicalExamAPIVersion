@@ -6,7 +6,7 @@ from ..serializers.display_car_serializers import DisplayCarSerializer
 from rest_framework.response import Response
 import pytz
 
-class DisplayCar(APIView):    
+class DisplayCarViews(APIView):    
     def get(self, request):
         
         car = Car.objects.all().values('id', 'car_brand', 'car_model', 'plate_number')

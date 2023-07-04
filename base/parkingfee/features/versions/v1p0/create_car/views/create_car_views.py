@@ -7,7 +7,7 @@ from ..serializers.create_car_serializers import CreateCarSerializer
 
 
 
-class CreateCar(APIView):    
+class CreateCarViews(APIView):    
     def post(self, request):
         serializer = CreateCarSerializer(data=request.data)
         data = {}
