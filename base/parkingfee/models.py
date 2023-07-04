@@ -4,6 +4,7 @@ from django.utils import timezone
 class Car(models.Model):
     id = models.CharField(max_length=5, primary_key=True)
     car_brand = models.CharField(max_length=100, null=True)
+    car_model = models.CharField(max_length=100, null=True)
     plate_number = models.CharField(max_length=20)
 
 class ParkingFee(models.Model):
