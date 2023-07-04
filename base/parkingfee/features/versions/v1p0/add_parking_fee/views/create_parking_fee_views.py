@@ -17,7 +17,7 @@ class CreateParkingFeeViews(APIView):
                 car = Car.objects.get(id=car_id)
             except Car.DoesNotExist:
                 return Response({
-                    "status": "error",
+                    "status": not_Found,
                     "message": f"Car with id {car_id} does not exist",
                     "data": {},
                     "errors": {}
